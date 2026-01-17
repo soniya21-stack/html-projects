@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled HTML Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- SEO Meta Tags -->
-    <title>Home | Simple HTML Website</title>
-    <meta name="description" content="Homepage of a simple HTML-only website">
-    <meta name="keywords" content="HTML, Website Structure, Semantic HTML">
-    <meta name="author" content="Soniya Bhardwaj">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="navbar">
+    <div class="logo">MyWebsite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>
-                This is a simple multi-page website created using only HTML.
-                The focus is on semantic structure, not styling.
-            </p>
-        </section>
 
-        <section>
-            <h2>About This Site</h2>
-            <p>
-                This website demonstrates how to structure a website using
-                header, navigation, main content, and footer.
-            </p>
-        </section>
-    </main>
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple responsive website styled using CSS.</p>
+  </section>
 
-    <footer>
-        <p>© 2026 My Website</p>
-    </footer>
+  <!-- Content Section -->
+  <section class="content">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 MyWebsite</p>
+  </footer>
 
 </body>
 </html>

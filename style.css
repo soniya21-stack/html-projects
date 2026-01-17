@@ -1,0 +1,110 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #333;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  background: #ddd;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  padding: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+
+  .content {
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .contact form {
+    width: 50%;
+    margin: auto;
+  }
+}
